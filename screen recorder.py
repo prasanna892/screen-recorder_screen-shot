@@ -80,7 +80,7 @@ while True:
 
 if inp=='v':    
     # setting file path, format, fps, height and width
-    captured_video = cv2.VideoWriter(f'D:\screen record\{file_name}.mp4', fourcc,20,(width,height)) 
+    captured_video = cv2.VideoWriter(f'enter your save location{file_name}.mp4', fourcc,20,(width,height)) 
     start=True
 
     #printing current time
@@ -111,4 +111,4 @@ if inp=='s':
     # and finally write the image to disk
     image = ImageGrab.grab(bbox=(int(left),int(top),int(right),int(bottom)))
     image = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
-    cv2.imwrite(f'D:\screen record\{file_name}.png', image)
+    cv2.imwrite(f'enter your save location{file_name}.png', image)
